@@ -9,4 +9,4 @@ phases:
   build:
     commands:
       - echo Run terraform Init
-      - terraform Init
+      - ls
