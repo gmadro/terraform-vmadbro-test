@@ -37,12 +37,3 @@ resource "aws_instance" "remote3"{
         Name = "Pipeline build 3"
     }
 }
-
-resource "aws_instance" "remote4"{
-    ami = "ami-09d95fab7fff3776c"
-    instance_type = "t2.micro"
-
-    tags = {
-        Name = "Pipeline build 4"
-    }
-}
