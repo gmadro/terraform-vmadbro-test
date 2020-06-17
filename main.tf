@@ -16,6 +16,24 @@ resource "aws_instance" "remote"{
     instance_type = "t2.micro"
 
     tags = {
-        Name = "Pipeline build"
+        Name = "Pipeline build 1"
+    }
+}
+
+resource "aws_instance" "remote2"{
+    ami = "ami-09d95fab7fff3776c"
+    instance_type = "t2.micro"
+
+    tags = {
+        Name = "Pipeline build 2"
+    }
+}
+
+resource "aws_instance" "remote3"{
+    ami = "ami-09d95fab7fff3776c"
+    instance_type = "t2.micro"
+
+    tags = {
+        Name = "Pipeline build 3"
     }
 }
